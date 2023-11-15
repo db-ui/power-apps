@@ -43,5 +43,5 @@ jobs:
             const { default: uploadAsset } = await import('${{ github.workspace }}/.github/scripts/upload-asset.js');
             const release_id = context.payload.release.id;
             const assetName = 'DBUI.zip';
-            const assetPath = '${{ github.workspace }}/build-power-apps/DBUI/bin/Release/DBUI.zip';
+            const assetPath = '${{ github.workspace }}/DBUI/bin/Release/DBUI.zip';
             return await uploadAsset({github, context, release_id, assetName, assetPath});
