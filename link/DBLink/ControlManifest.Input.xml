@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <control namespace="DBUI" constructor="DBLinkPA" version="0.0.0"
+             display-name-key="DBLink_Display_Key" description-key="DBLink_Desc_Key"
+             control-type="standard">
+
+                <property name="children" display-name-key="children_Display_Key"
+
+                  description-key="children_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="Link"
+                  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="href" display-name-key="href_Display_Key"
+
+                  description-key="href_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="https://www.deutschebahn.com/"
+                  
+				                    of-type="SingleLine.URL"
+                  
+                                          />
+                                  <property name="title" display-name-key="title_Display_Key"
+
+                  description-key="title_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="variant" display-name-key="variant_Display_Key"
+
+                  description-key="variant_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="adaptive"
+                  
+				                    of-type="Enum"
+                  
+                                    >
+                                            <value name="Adaptive" display-name-key="Adaptive">adaptive</value>
+                                            <value name="primary" display-name-key="Primary">primary</value>
+                                            <value name="Inline" display-name-key="Inline">inline</value>
+                                            </property>
+                                  <property name="target" display-name-key="target_Display_Key"
+
+                  description-key="target_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="_blank"
+                  
+				                    of-type="Enum"
+                  
+                                    >
+                                            <value name="_self" display-name-key="_self">_self</value>
+                                            <value name="_blank" display-name-key="_blank">_blank</value>
+                                            <value name="_parent" display-name-key="_parent">_parent</value>
+                                            <value name="_top" display-name-key="_top">_top</value>
+                                            </property>
+                          
+
+		
+        <resources>
+            <code path="index.ts" order="1"/>
+            <resx path="strings/DBLink.1031.resx" version="0.0.0" />
+            <resx path="strings/DBLink.1033.resx" version="0.0.0" />
+        </resources>
+    </control>
+</manifest>
+

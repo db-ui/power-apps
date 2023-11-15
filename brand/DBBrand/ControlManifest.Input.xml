@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <control namespace="DBUI" constructor="DBBrandPA" version="0.0.0"
+             display-name-key="DBBrand_Display_Key" description-key="DBBrand_Desc_Key"
+             control-type="standard">
+
+                <property name="anchorRef" display-name-key="anchorRef_Display_Key"
+
+                  description-key="anchorRef_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.URL"
+                  
+                                          />
+                                  <property name="title" display-name-key="title_Display_Key"
+
+                  description-key="title_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="children" display-name-key="children_Display_Key"
+
+                  description-key="children_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="Anwendungsname"
+                  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="imgSrc" display-name-key="imgSrc_Display_Key"
+
+                  description-key="imgSrc_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="https://ppassets.azureedge.net/assets/images/db_logo.svg"
+                  
+				                    of-type="SingleLine.URL"
+                  
+                                          />
+                                  <property name="imgAlt" display-name-key="imgAlt_Display_Key"
+
+                  description-key="imgAlt_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="imgWidth" display-name-key="imgWidth_Display_Key"
+
+                  description-key="imgWidth_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="34"
+                  
+				                    of-type="Decimal"
+                  
+                                          />
+                                  <property name="imgHeight" display-name-key="imgHeight_Display_Key"
+
+                  description-key="imgHeight_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="24"
+                  
+				                    of-type="Decimal"
+                  
+                                          />
+                          
+
+		
+        <resources>
+            <code path="index.ts" order="1"/>
+            <resx path="strings/DBBrand.1031.resx" version="0.0.0" />
+            <resx path="strings/DBBrand.1033.resx" version="0.0.0" />
+        </resources>
+    </control>
+</manifest>
+

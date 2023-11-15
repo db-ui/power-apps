@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+    <control namespace="DBUI" constructor="DBCheckboxPA" version="0.0.0"
+             display-name-key="DBCheckbox_Display_Key" description-key="DBCheckbox_Desc_Key"
+             control-type="standard">
+
+                <property name="children" display-name-key="children_Display_Key"
+
+                  description-key="children_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				                    default-value="Checkbox"
+                  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="name" display-name-key="name_Display_Key"
+
+                  description-key="name_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="value" display-name-key="value_Display_Key"
+
+                  description-key="value_Desc_Key"
+
+                                    usage="bound"
+                  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                                  <property name="id" display-name-key="id_Display_Key"
+
+                  description-key="id_Desc_Key"
+
+                                    usage="input"
+				  
+                                    required="false"
+				  
+				  
+				                    of-type="SingleLine.Text"
+                  
+                                          />
+                          
+
+		
+        <resources>
+            <code path="index.ts" order="1"/>
+            <resx path="strings/DBCheckbox.1031.resx" version="0.0.0" />
+            <resx path="strings/DBCheckbox.1033.resx" version="0.0.0" />
+        </resources>
+    </control>
+</manifest>
+
