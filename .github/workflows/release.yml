@@ -19,8 +19,7 @@ jobs:
       - name: 🏷 Get and Set Package Version on Env
         id: getVersion
         run: |
-          TAG=${GITHUB_REF#refs/tags/}
-          OUTPUT=$(npx find-versions-cli "$TAG")
+          OUTPUT=$(npx find-versions-cli "${GITHUB_REF#refs/tags/}")
           echo "$OUTPUT"
           echo "version=$OUTPUT" >> $GITHUB_OUTPUT
 
